@@ -5,10 +5,28 @@ body {
 h1 {
   color: #ccc;
   font-weight: 300;
+  font-family: times;
+  font-size: 60px;
 }
+
+h5 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.3rem;
+}
+
+/* h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.7rem;
+} */
+
 
 figure {
   margin: auto;
+}
+
+p {
+  font-family: 'Bellefair', serif;
+  font-size: 1.3rem;
 }
 
 
@@ -44,6 +62,7 @@ img {
   overflow: hidden;
 }
 
+
 .logo {
   height: 600px;
   width: 100%;
@@ -65,7 +84,17 @@ img {
   right:-20%;
 }
 
+#github_style {
+  text-decoration: none;
+  border-bottom: blue solid 1px;
+  color: blue;
+}
 
+#github_style:hover {
+  text-decoration: none;
+  border-bottom: lightblue solid 1px;
+  color: lightblue;
+}
 
 /* picture grid */
 .projects .figure {
@@ -89,7 +118,7 @@ img {
   background: white;
   color: black;
   padding: 2px 8px;
-  font-size: 15px;
+  font-size: 17px;
   margin: 0 10px;
   border: 1px solid #dee2e6;
   transition: all 0.3s ease-in-out;
@@ -146,7 +175,9 @@ img {
   padding: 10px 25px; */
 }
 
-
+.promo-text p {
+  font-size: 80px;
+}
 
 /* online */
 .post a {
@@ -195,6 +226,7 @@ footer {
 #button-contact {
   background-color: #ccc;
   color:black;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #button-contact:hover {
@@ -204,6 +236,10 @@ footer {
 #center {
   text-align: center;
 }
+
+
+
+
 /* Media Queries */
 
 @media (max-width: 1470px) {
@@ -227,6 +263,11 @@ footer {
       }
     }
 
+  @media (max-width: 576px) {
+    .spacing-above {
+      margin-top: 60px;
+    }
+  }
   @media (max-width: 490px) {
     .logo {
       margin-top: 80px;

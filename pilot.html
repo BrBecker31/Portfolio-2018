@@ -7,14 +7,144 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- animate.css -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/pilot.css">
 
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     </head>
   <body>
 
+    <div id="background">
+      <video src="assets/videos/CloudSurf/Cloud_Surf.mp4" autoplay="true" loop="true"></video>
+    </div>
 
-    <script src=""></script>
+    <div id="logo">
+
+    </div>
+
+    <div id="main" >
+      <img src="assets/icons/Black_Plane.png" id="icon" >
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="" id="about_modal"  data-toggle="modal" data-target="#about-me">About</a> </li>
+          <li><a href="https://www.linkedin.com/in/bryan-w-becker/" target="_blank">LinkedIn</a> </li>
+          <li><a href="#" id="button-contact" data-toggle="modal" data-target="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="menu_circle_layer"></div>
+
+    <div id="social_media">
+      <div id="container">
+        <div id="msg">Resume</div>
+          <ul >
+            <li><a href="assets/files/flight_resume.pdf" target="_blank"><i class="far fa-file-pdf fa-3x"></i></a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="social_circle_layer"></div>
+
+
+    <!-- Modal About Section -->
+
+    <div id="about-me" class="modal fade">
+      <div class="modal-dialog"  role="document">
+        <div class="modal-content form_style">
+          <div class="modal-header">
+            <h5 class="modal-title">About Me</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6 "><img src="assets/img/cockpit_photo.JPG" alt="..." class="img-thumbnail">
+                  <div class="row mt-2">
+                    <p>Most recently I have been providing leadership and guidance to instructors and students starting the aviation journey at the University of North Dakota.
+                       In addition, I also provided turbine instruction in the King Air 90GTi.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 ml-auto">
+
+                    <strong>Total Time:</strong> <p>2,660 hours</p> <br>
+                      <strong>PIC:</strong> <p>2,541 hours</p> <br>
+                      <strong>Multi-Engine:</strong> <p>793 hours</p> <br>
+                      <strong>PIC Turbine:</strong> <p>450 hours</p> <br>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary modal_button_style" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modal Contact Section -->
+
+    <div id="contact-me" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div id="form_style" class="modal-content form_style">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Me</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Form Content -->
+
+          <form  action="https://formspree.io/az_sanddevil@yahoo.com" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input type="email" name="_replyto" class="form-control" id="email" placeholder="JohnSmith@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea">Message</label>
+              <textarea class="form-control" name="message" id="Textarea" xrows="3"></textarea>
+            </div>
+            <div class="center">
+              <input type="hidden" name="_next" value="www.bryanwbecker.com" />
+              <button type="submit" value="Send" class="btn btn-secondary modal_button_style">Submit</button>
+            </div>
+          </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="assets/js/jQueryMain.js">
+
+    </script>
 
   </body>
 </html>
